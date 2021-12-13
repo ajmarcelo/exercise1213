@@ -6,7 +6,7 @@ Documentation   A resource file with reusable keywords and variables
 Library         SeleniumLibrary
 
 *** Variables ***
-${SERVER}                   https://www.saucedemo.com/
+${SERVER}                   www.saucedemo.com
 ${BROWSER}                  chrome
 ${DELAY}                    0
 
@@ -25,10 +25,10 @@ ${Z TO A}                   za
 ${LOW TO HIGH}              lohi
 ${HIGH TO LOW}              hilo
 
-${active az}                Name (A to Z) 
-${active za}                Name (Z to A)
-${active lohi}              Price (low to high)
-${active hilo}              Price (high to low)
+${active az}                NAME (A TO Z) 
+${active za}                NAME (Z TO A)
+${active lohi}              PRICE (LOW TO HIGH)
+${active hilo}              PRICE (HIGH TO LOW)
 
 ${BROKEN INVENTORY IMAGE}   /static/media/sl-404.168b1cce.jpg
 
@@ -74,4 +74,4 @@ Error Message
 # Filter
 Select Filter
     [Arguments]     ${filter}
-    Select From List By Value   data-test="product_sort_container"   ${filter}
+    Select From List By Value   css:*[data-test="product_sort_container"]   ${filter}

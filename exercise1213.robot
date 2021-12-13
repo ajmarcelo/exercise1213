@@ -36,24 +36,24 @@ Resource        exercise1213-resources.robot
 
 5. Sort product name (A to Z)
     Valid Login
-    Select Filter   ${A TO Z}
-    Element Should Contain  class="active_option"   ${active az}
-    [Teardown]      Close Browser
+    Select Filter           ${A TO Z}
+    Element Should Contain  css:*[class="active_option"]   ${active az}
+    [Teardown]              Close Browser
 
 6. Sort product name (Z to A)
     Valid Login
-    Select Filter   ${Z TO A}
-    Element Should Contain  class="active_option"   ${active za}
-    [Teardown]      Close Browser    
+    Select Filter           ${Z TO A}
+    Element Should Contain  css:*[class="active_option"]   ${active za}
+    [Teardown]              Close Browser    
 
 7. Sort product price (low to high)
     Valid Login
-    Select Filter   ${LOW TO HIGH}
-    Element Should Contain  class="active_option"   ${active lohi}
-    [Teardown]      Close Browser
+    Select Filter               ${LOW TO HIGH}
+    Element Should Contain      css:*[class="active_option"]   ${active lohi}
+    [Teardown]                  Close Browser
 
 8. Sort product price (high to low)
     Valid Login
-    Select Filter   ${HIGH TO LOW}
-    Element Should Contain  class="active_option"   ${active hilo}
-    [Teardown]      Close Browser
+    Select Filter           ${HIGH TO LOW}
+    Element Should Contain  css:*[class="active_option"]   ${active hilo}
+    [Teardown]              Close Browser
